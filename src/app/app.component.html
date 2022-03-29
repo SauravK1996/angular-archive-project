@@ -1,0 +1,26 @@
+<div style="text-align: center">
+  <h1>Welcolme to {{ title }}</h1>
+</div>
+<div>
+  <label for="file">Choose File</label>
+  <input type="file" id="file" (change)="handleFileInput($event)" />
+</div>
+<div>
+  <p>File name : {{ filename }}</p>
+  <p>File size : {{ filesize }}</p>
+  <p>File type : {{ filetype }}</p>
+</div>
+
+<!-- <div style="text-align: center"> -->
+<div>
+  <div class="twoColumn">
+    <div class="column left">
+      <ul id="treeView">
+        <i>Waiting...</i>
+      </ul>
+    </div>
+    <div class="column right">
+      <textarea id="fileOutput"></textarea>
+    </div>
+  </div>
+</div>
